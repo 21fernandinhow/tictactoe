@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+.flex-central, .container .content .item, .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-style, .footer .theme-button, .header .restart-button {
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+  font-family: "Silkscreen", cursive;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+.button-style:hover, .footer .theme-button:hover, .header .restart-button:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transition: 0.6s;
+}
+
+:root {
+  --primary-color: #00ffee;
+  --bg-color: #1c1c1c;
+  --contrast-color: #fff7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--contrast-color);
+  font-family: "Silkscreen", cursive;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  min-height: 10vh;
+  text-align: center;
+}
+.header .title {
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+.header .title:hover {
+  text-decoration: underline;
+  font-size: 36px;
+  transition: 0.6s;
+}
+.header #result .highlight {
+  color: var(--primary-color);
+}
+.container {
+  width: 100%;
+  min-height: 75vh;
+}
+.container .content {
+  background-color: var(--contrast-color);
+  width: 500px;
+  height: 500px;
+  margin: 2rem;
+  display: grid;
+  gap: 4px 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8 item9";
+}
+.container .content .item {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.container .content .item #item1 {
+  grid-area: item1;
+}
+.container .content .item #item2 {
+  grid-area: item2;
+}
+.container .content .item #item3 {
+  grid-area: item3;
+}
+.container .content .item #item4 {
+  grid-area: item4;
+}
+.container .content .item #item5 {
+  grid-area: item5;
+}
+.container .content .item #item6 {
+  grid-area: item6;
+}
+.container .content .item #item7 {
+  grid-area: item7;
+}
+.container .content .item #item8 {
+  grid-area: item8;
+}
+.container .content .item #item9 {
+  grid-area: item9;
+}
+
+.footer {
+  min-height: 10vh;
+  text-align: center;
+}
+.footer p:hover {
+  text-decoration: underline;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.footer .theme-button {
+  display: inline;
+  margin: 10px;
+}
+.footer .theme-button:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 560px) {
+  .container {
+    min-height: 60vh;
+  }
+  .container .content {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
